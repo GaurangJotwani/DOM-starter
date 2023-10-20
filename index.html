@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>Simple Text Editor</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1>Simple Text Editor</h1>
+      <div class="btn-toolbar mt-3">
+        <!-- Toolbar with formatting buttons -->
+        <button class="btn btn-primary mr-2" id="bold-btn">
+          <strong>B</strong>
+        </button>
+        <button class="btn btn-primary mr-2" id="italic-btn">
+          <em>I</em>
+        </button>
+        <button class="btn btn-primary mr-2" id="underline-btn">
+          <u>U</u>
+        </button>
+        <button class="align btn btn-primary mr-2" id="left-align">
+          <div>L</div>
+        </button>
+        <button class="align btn btn-primary mr-2" id="center-align">
+          <div>C</div>
+        </button>
+        <button class="align btn btn-primary" id="right-align">
+          <div>R</div>
+        </button>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <label for="textInput">Enter Text:</label>
+          <textarea class="form-control" id="textInput" rows="6"></textarea>
+        </div>
+        <div class="col">
+          <label for="textInput">Formatted Text:</label>
+          <textarea class="form-control" id="textOutput" rows="6"></textarea>
+        </div>
+      </div>
+    </div>
+    <!-- Include Bootstrap CSS -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
